@@ -45,7 +45,7 @@ contract activityTracker {
 
     }
     function logworkout(
-        string memory _activityType,// ;?,
+        string memory _activityType,// ;?, not struct, because it is only one parameter, if there are more than 2 parameters, we can use struct to make it more clear
         uint256 _duration,
         uint256 _distance
     ) public onlyRegistered {
